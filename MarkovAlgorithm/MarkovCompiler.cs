@@ -205,7 +205,7 @@ namespace MarkovAlgorithm
             var sb = new StringBuilder("---Replacements---\n");
             for (int i = 0; i < _replacements.Length / 2; i++)
             {
-                sb.Append($"{_replacements[i]}->{_replacements[i*2]}\n");
+                sb.Append($"\'{_replacements[i]}\'->\'{_replacements[i*2]}\'\n");
             }
             sb.Append("---End Replacements---\n");
             return sb.ToString();
